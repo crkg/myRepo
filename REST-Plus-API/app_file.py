@@ -1,5 +1,5 @@
 import sys
-sys.path.append("c:\\Users\\ramesh.kg\\PycharmProjects\\Flask-REST-full\\")
+sys.path.append("/app/")
 from flask import Flask
 from apis import api
 
@@ -14,5 +14,5 @@ def handle_exception(error):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0",debug=True)
 
